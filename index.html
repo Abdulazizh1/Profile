@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdulaziz Alharbi — Software Engineer & ServiceNow Developer</title>
+<meta name="description" content="Abdulaziz Alharbi — software engineer and ServiceNow developer in Riyadh, working on enterprise applications and digital transformation. LinkedIn, CV, email and phone.">
+<meta name="theme-color" content="#0E3B33">
+<meta property="og:title" content="Abdulaziz Alharbi — Software Engineer & ServiceNow Developer">
+<meta property="og:description" content="LinkedIn, CV, email and phone — one page.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#0E3B33;
+    --field-2:#134A40;
+    --accent:#3FD8A4;
+    --paper:#EFEFEA;
+    --sheet:#FFFFFF;
+    --ink:#12201C;
+    --muted:#6B7873;
+    --line:#E8E9E4;
+    --tint:#EAF6F1;
+    --pad:24px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    font-size:16px;line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    display:flex;justify-content:center;
+    padding:0;
+  }
+  .page{width:100%;max-width:480px;background:var(--sheet);min-height:100vh;overflow:hidden}
+  @media (min-width:520px){
+    body{padding:32px 20px}
+    .page{min-height:0;border-radius:22px;box-shadow:0 20px 60px -30px rgba(14,59,51,.5)}
+  }
+
+  /* ---------------- hero ---------------- */
+  .hero{
+    background:linear-gradient(168deg,var(--field-2) 0%,var(--field) 62%);
+    color:#fff;
+    padding:calc(52px + env(safe-area-inset-top)) var(--pad) 62px;
+    position:relative;
+  }
+  .hero h1{
+    font-family:"Bricolage Grotesque","Manrope",sans-serif;
+    font-weight:800;
+    font-size:clamp(3rem,15vw,3.9rem);
+    line-height:.9;
+    letter-spacing:-.035em;
+    margin:0 0 20px;
+  }
+  .hero p{
+    margin:0;
+    font-size:16.5px;
+    line-height:1.5;
+    color:rgba(255,255,255,.78);
+    max-width:30ch;
+  }
+  .hero p b{color:#fff;font-weight:600}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+  .pills span{
+    font-size:12.5px;font-weight:500;letter-spacing:.01em;
+    padding:6px 12px;border-radius:999px;
+    color:rgba(255,255,255,.86);
+    border:1px solid rgba(255,255,255,.22);
+  }
+  .pills span:first-child{background:var(--accent);color:var(--field);border-color:transparent;font-weight:700}
+
+  /* ---------------- sheet ---------------- */
+  .sheet{
+    background:var(--sheet);
+    border-radius:26px 26px 0 0;
+    margin-top:-26px;
+    position:relative;
+    padding:30px var(--pad) 0;
+  }
+  @media (min-width:520px){.page>.sheet:last-of-type{border-radius:26px 26px 22px 22px}}
+
+  .meta{display:grid;grid-template-columns:1fr 1fr;gap:20px 16px;margin:0 0 26px}
+  .meta div:first-child{grid-column:1 / -1}
+  .meta dt{font-size:11.5px;font-weight:600;letter-spacing:.06em;color:var(--muted);margin:0 0 4px}
+  .meta dd{margin:0;font-size:15px;font-weight:600;line-height:1.35}
+
+  .certs{margin:0 0 30px}
+  .certs h2{font-size:11.5px;font-weight:600;letter-spacing:.06em;color:var(--muted);margin:0 0 10px}
+  .certs ul{list-style:none;display:flex;flex-wrap:wrap;gap:7px;margin:0;padding:0}
+  .certs li{
+    font-size:13px;font-weight:600;color:#12564A;
+    background:var(--tint);border-radius:8px;padding:7px 11px;
+  }
+
+  /* ---------------- links ---------------- */
+  .links{border-top:1px solid var(--line);padding:8px 0 4px}
+  .row{
+    display:flex;align-items:center;gap:14px;width:100%;
+    padding:14px 6px;margin:0;
+    border:0;border-radius:14px;background:transparent;
+    color:inherit;text-align:left;font:inherit;text-decoration:none;cursor:pointer;
+    transition:background .18s ease,transform .12s ease;
+  }
+  .row+.row{margin-top:2px}
+  .row:hover,.row:focus-visible{background:var(--tint);outline:none}
+  .row:focus-visible{box-shadow:0 0 0 2px var(--field)}
+  .row:active{transform:scale(.985)}
+  .ico{
+    flex:0 0 42px;height:42px;border-radius:13px;
+    background:var(--tint);color:var(--field);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .ico svg{width:20px;height:20px;display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .ico svg.solid{fill:currentColor;stroke:none}
+  .txt{flex:1;min-width:0}
+  .txt b{display:block;font-weight:600;font-size:16px;letter-spacing:-.01em}
+  .txt span{display:block;color:var(--muted);font-size:13px;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .chev{flex:0 0 auto;color:#BFC7C3;display:flex;transition:transform .18s ease,color .18s ease}
+  .chev svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .row:hover .chev,.row:focus-visible .chev{color:var(--field);transform:translateX(3px)}
+
+  footer{
+    padding:26px var(--pad) calc(30px + env(safe-area-inset-bottom));
+    text-align:center;color:#9AA5A0;font-size:12.5px;
+  }
+
+  #toast{
+    position:fixed;left:50%;bottom:24px;transform:translate(-50%,16px);
+    background:var(--ink);color:#fff;padding:12px 18px;border-radius:12px;
+    font-size:14px;font-weight:500;opacity:0;pointer-events:none;
+    transition:opacity .22s ease,transform .22s ease;z-index:20;
+  }
+  #toast.on{opacity:1;transform:translate(-50%,0)}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<main class="page">
+
+  <header class="hero">
+    <h1>Abdulaziz<br>Alharbi</h1>
+    <p><b>Software engineer and ServiceNow developer</b>, building and automating the enterprise applications behind digital transformation.</p>
+    <div class="pills">
+      <span>DXC Technology</span>
+      <span>Riyadh, Saudi Arabia</span>
+    </div>
+  </header>
+
+  <div class="sheet">
+
+    <dl class="meta">
+      <div>
+        <dt>Current role</dt>
+        <dd>Analyst I – ERP Package Applications (ServiceNow Developer)</dd>
+      </div>
+      <div>
+        <dt>At DXC since</dt>
+        <dd>May 2025</dd>
+      </div>
+      <div>
+        <dt>Degree</dt>
+        <dd>BSc Software Engineering, KFUPM</dd>
+      </div>
+    </dl>
+
+    <section class="certs">
+      <h2>ServiceNow certifications</h2>
+      <ul>
+        <li>CSA</li>
+        <li>CAD</li>
+        <li>CIS – ITSM</li>
+        <li>CIS – Data Foundations (CMDB &amp; CSDM)</li>
+      </ul>
+    </section>
+
+    <nav class="links">
+
+      <a class="row" href="https://www.linkedin.com/in/abdulaziz-alharbi-2b3534263" target="_blank" rel="noopener">
+        <span class="ico"><svg class="solid" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.4 8.75 22 11.2 22 14.1V21h-4v-6.1c0-1.45-.03-3.3-2.05-3.3-2.05 0-2.37 1.57-2.37 3.2V21h-4V9z"/></svg></span>
+        <span class="txt"><b>LinkedIn profile</b><span>Connect with me</span></span>
+        <span class="chev"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>
+      </a>
+
+      <a class="row" href="./Abdulaziz-Alharbi-CV.pdf" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+        <span class="txt"><b>View my CV</b><span>Opens the PDF in a new tab</span></span>
+        <span class="chev"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>
+      </a>
+
+      <a class="row" href="./Abdulaziz-Alharbi-CV.pdf" download="Abdulaziz-Alharbi-CV.pdf">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 20h16"/></svg></span>
+        <span class="txt"><b>Download my CV</b><span>One-page PDF</span></span>
+        <span class="chev"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>
+      </a>
+
+      <a class="row" href="mailto:ah.harbi726@gmail.com">
+        <span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.6l8.5 6 8.5-6"/></svg></span>
+        <span class="txt"><b>Email me</b><span>ah.harbi726@gmail.com</span></span>
+        <span class="chev"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>
+      </a>
+
+      <a class="row" href="tel:+966508154855">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.4-2.2 1.6a12 12 0 0 0 5.9 5.9l1.6-2.2L20 14.5V18a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 6.2 2 2 0 0 1 6 4z"/></svg></span>
+        <span class="txt"><b>Call me</b><span>+966 50 815 4855</span></span>
+        <span class="chev"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>
+      </a>
+
+      <button class="row" id="vcard">
+        <span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="11" r="2"/><path d="M6 16.2c.6-1.3 1.7-2 3-2s2.4.7 3 2M15 10h3M15 13.5h3"/></svg></span>
+        <span class="txt"><b>Save my contact</b><span>Adds me to your phone</span></span>
+        <span class="chev"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>
+      </button>
+
+    </nav>
+
+    <footer>Updated September 2026</footer>
+  </div>
+</main>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  var LINKEDIN = "https://www.linkedin.com/in/abdulaziz-alharbi-2b3534263";
+
+  var toastEl = document.getElementById("toast"), toastTimer;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("on"); }, 2200);
+  }
+
+  document.getElementById("vcard").addEventListener("click", function(){
+    var v = [
+      "BEGIN:VCARD","VERSION:3.0",
+      "N:Alharbi;Abdulaziz;;;",
+      "FN:Abdulaziz Alharbi",
+      "TITLE:Software Engineer / ServiceNow Developer",
+      "ORG:DXC Technology",
+      "TEL;TYPE=CELL:+966508154855",
+      "EMAIL;TYPE=INTERNET:ah.harbi726@gmail.com",
+      "URL:" + LINKEDIN,
+      "ADR;TYPE=WORK:;;;Riyadh;;;Saudi Arabia",
+      "END:VCARD"
+    ].join("\r\n");
+    var url = URL.createObjectURL(new Blob([v], {type:"text/vcard"}));
+    var a = document.createElement("a");
+    a.href = url; a.download = "Abdulaziz-Alharbi.vcf";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+    toast("Contact file saved");
+  });
+})();
+</script>
+</body>
+</html>
